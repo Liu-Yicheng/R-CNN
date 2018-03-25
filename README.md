@@ -23,7 +23,7 @@ i5-7500 + GTX 1070Ti
 1、train_list.txt---预训练数据，数据在17flowers文件夹中         
 2、fine_tune_list.txt---微调数据2flowers文件夹中       
 3、1.png---直接用选择性搜索的区域划分           
-   ![selectivesearch_1](result/1.png)                
+   ![selectivesearch_1](https://github.com/liuyicheng007/R-CNN/raw/master/result/1.png)                
 4、2.png---通过RCNN后的区域划分            
    ![RCNN_1](./result/2.png)      
 5、3.png---通过SVM与边框回归之后的最终结果        
