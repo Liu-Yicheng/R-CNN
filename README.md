@@ -25,7 +25,7 @@ i5-7500 + GTX 1070Ti
 3、1.png---直接用选择性搜索的区域划分           
    ![selectivesearch_1](result/1.png)                
 4、2.png---通过RCNN后的区域划分            
-   ![RCNN_1](result/2.png)      
+   ![RCNN_1](./result/2.png)      
 5、3.png---通过SVM与边框回归之后的最终结果        
    ![RCNN_2](result/3.png)    
 
