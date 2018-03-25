@@ -23,11 +23,11 @@ i5-7500 + GTX 1070Ti
 1、train_list.txt---预训练数据，数据在17flowers文件夹中         
 2、fine_tune_list.txt---微调数据2flowers文件夹中       
 3、1.png---直接用选择性搜索的区域划分           
-   ![selectivesearch_1](result/1.png)            
-4、2.png---通过RCNN后的区域划分        
-   ![RCNN_1](result/2.png)
-4、3.png---通过SVM与边框回归之后的最终结果        
-   ![RCNN_2](result/3.png)
+   ![selectivesearch_1](result/1.png)                
+4、2.png---通过RCNN后的区域划分            
+   ![RCNN_1](result/2.png)      
+5、3.png---通过SVM与边框回归之后的最终结果        
+   ![RCNN_2](result/3.png)    
 
 # 程序问题   
 1.参考代码给出了R-CNN十分清晰的主体流程，但缺失了最后的边框回归步骤。在实现的部分中使用了tflearn来实现       
