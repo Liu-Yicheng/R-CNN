@@ -44,8 +44,8 @@ i5-7500 + GTX 1070Ti
   计算每个region proposal与人工标注的框的IoU，IoU重叠阈值设为0.5，大于这个阈值的作为正样本，其他作     
 　为负样本。然后在训练的每一次迭代中都使用32个正样本（包括所有类别）和96个背景样本组成的128张图片的batch    
 　进行训练（正样本图片太少了）      
-2.SVM训练过程：
-　对每个类都训练一个线性的SVM分类器，训练SVM需要正负样本文件，这里的正样本就是ground-truth框中的图像作    
+2.SVM训练过程：     
+　对每个类都训练一个线性的SVM分类器，训练SVM需要正负样本文件，这里的正样本就是ground-truth框中的图像作
 　为正样本，完全不包含的region proposal应该是负样本，但是对于部分包含某一类物体的region proposal该如  
 　何训练作者同样是使用IoU阈值的方法，这次的阈值为0.3，计算每一个region proposal与标准框的IoU，小于0.3   
 　的作为负样本，其他的全都丢弃。由于训练样本比较大，作者使用了standard hard negative mining method   
