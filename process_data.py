@@ -171,7 +171,7 @@ class Train_Alexnet_Data(object):
         else:
             with codecs.open(self.train_list, 'r', 'utf-8') as f:
                 lines = f.readlines()
-                for num, line in lines:
+                for num, line in enumerate(lines):
                     context = line.strip().split(' ')
                     image_path = context[0]
                     index = int(context[1])
